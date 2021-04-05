@@ -3,9 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>hello world</h1>
+  
+  <main>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Huddle">
+          <button type="button" class="btn btn-small">try it free</button>
+        </div>
+        <section class="get-started-upper">
+          <h1>build the community your fans will love</h1>
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion</p>
+          <button type="button" class="btn btn-big">get started for free</button>
+        </section>
+      </header>
+      <section class="stats">
+        <img src="./images/screen-mockups.svg" alt="screen-mockups" class="stats-icon">
+        <div class="stats-container">
+          <div class="communities">
+            <img src="./images/icon-communities.svg" alt="communities">
+            <p class="number">1.4k+</p>
+            <p class="name">communities formed</p>
+          </div>
+          <div class="messages">
+            <img src="./images/icon-messages.svg" alt="messages" class="stats-icon">
+            <p class="number">2.7m+</p>
+            <p class="name">Messages sent</p>
+          </div>
+        </div>
+      </section>
+      <section class="quality-1">
+        <img src="./images/illustration-grow-together.svg" alt="grow-together">
+        <h2>grow together</h2>
+        <p class="info">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+      </section>
+      <section class="quality-2">
+        <img src="./images/illustration-flowing-conversation.svg" alt="flowing-converation">
+        <h2>flowing conversations</h2>
+        <p class="info">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+      </section>
+      <section class="quality-3">
+        <img src="./images/illustration-your-users.svg" alt="your-users">
+        <h2>your users</h2>
+        <p class="info">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+      </section>
+      <section class="get-started-lower">
+        <h1>ready to buil your community?</h1>
+        <button type="button" class="btn btn-big">get started for free</button>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="newsletter">
+          <h4 class="newsletter-heading">newsletter</h4>
+          <p class="newsletter-info">Toreceive tip on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address</p>
+          <from class="newsletter-form">
+            <input type="text" class="newsletter-input">
+            <button type="submit" class="btn btn-subscribe">subscribe</button>
+          </from>
+        </div>
+        <div class="contacts">
+          <h4 class="contacts-header">
+            <img src="./images/logo.svg" alt="Huddle">
+          </h4>
+          <p class="contacts-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde sed eum pariatur doloremque consectetur obcaecati aspernatur optio cupiditate debitis.</p>
+          <div class="contacts-info">
+            <div class="phone">
+              <a href="#" role="presentation"><i class="fas fa-phone-volume"></i></a>
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="email">
+              <a href="#" role="presentation"><i class="fas fa-envelope"></i></a>
+              <p>example@company.com</p>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
