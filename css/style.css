@@ -5,36 +5,233 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
---pink: hsl(322, 100%, 66%)
---lightPink: hsl(321, 100%, 78%)
---lightRed: hsl(0, 100%, 63%)
---darkCyan: hsl(192, 100%, 9%)
---paleBlue: hsl(207, 100%, 98%)
+  --pink: hsl(322, 100%, 66%);
+  --lightPink: hsl(321, 100%, 78%);
+  --lightRed: hsl(0, 100%, 63%);
+  --darkCyan: hsl(192, 100%, 9%);
+  --paleBlue: hsl(207, 100%, 98%);
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-    min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  color: #111;
+  letter-spacing: 0.4px;
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  font-size: 1.8rem;
 }
 
 .btn {
-    border-radius: 1rem;
-    padding: .5rem 1.5rem;
-    font-weight: 600;
-    text-transform: capitalize;
-    cursor: pointer;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* ==========
+    Header
+============ */
+
+.header {
+  margin: 1.5rem 0;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header .logo img {
+  width: 7rem;
+}
+
+.btn-small {
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1.25rem;
+  color: var(--lightPink);
+  background-color: #fff;
+  border: 2px solid var(--lightPink);
+  transition: background-color 0.4s ease;
+}
+
+.btn-small:hover {
+  color: #fff;
+  background-color: var(--lightPink);
+}
+
+.header .get-started-upper {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.header .get-started-upper h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.header .get-started-upper p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 3rem;
+}
+
+.btn-big {
+  font-size: 0.7rem;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.6rem 2rem;
+  background-color: var(--pink);
+  border: 2px solid var(--pink);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.4s ease;
+}
+
+.btn-big:hover {
+  background-color: #fff;
+  color: var(--pink);
+}
+
+/* =================
+    Screen Mockups
+=================== */
+
+.screen-mockups {
+  width: 90%;
+  margin: auto;
+}
+
+/* ==========
+    Stats
+=========== */
+
+.stats {
+  height: 50rem;
+}
+
+.stats .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats .communities,
+.stats .messages {
+  margin: 4rem 0 6rem 0;
+}
+
+.stats img {
+  width: 2rem;
+}
+
+.stats .number {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stats .name {
+  font-size: 1rem;
+  color: #444;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* ====================
+    Qualities Secions
+====================== */
+
+.quality-1,
+.quality-2,
+.quality-3 {
+  height: 50rem;
+}
+
+.quality-1 .container,
+.quality-2 .container,
+.quality-3 .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.quality-image {
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+
+.quality-name {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.quality-info {
+  font-size: 1rem;
+}
+
+.quality-1,
+.quality-3 {
+  background-color: var(--paleBlue);
+}
+
+/* ====================
+    Get Started Lower
+====================== */
+
+.get-started-lower {
+  height: 40rem;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.get-started-lower h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/* ===========
+    Footer
+============ */
