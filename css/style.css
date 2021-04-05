@@ -22,8 +22,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
-  color: #111;
-  letter-spacing: 0.4px;
+  color: var(--darkCyan);
+  letter-spacing: 0.5px;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -91,7 +91,7 @@ a {
 }
 
 .btn-small:hover {
-  color: #fff;
+  color: var(--paleBlue);
   background-color: var(--lightPink);
 }
 
@@ -109,13 +109,13 @@ a {
 
 .header .get-started-upper p {
   font-size: 1rem;
-  color: #444;
+  color: var(--darkCyan);
   margin-bottom: 3rem;
 }
 
 .btn-big {
   font-size: 0.7rem;
-  color: #fff;
+  color: var(--paleBlue);
   border-radius: 1rem;
   padding: 0.6rem 2rem;
   background-color: var(--pink);
@@ -125,7 +125,7 @@ a {
 }
 
 .btn-big:hover {
-  background-color: #fff;
+  background-color: var(--paleBlue);
   color: var(--pink);
 }
 
@@ -171,7 +171,7 @@ a {
 
 .stats .name {
   font-size: 1rem;
-  color: #444;
+  color: var(--darkCyan);
   text-transform: capitalize;
   text-align: center;
 }
@@ -235,3 +235,134 @@ a {
 /* ===========
     Footer
 ============ */
+
+footer {
+  background-color: var(--darkCyan);
+  color: var(--paleBlue);
+  padding: 2rem 0;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===================
+    Footer Newsletter
+===================== */
+
+footer .newsletter {
+  margin-bottom: 4rem;
+}
+
+footer .newsletter-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+footer .newsletter-info {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+footer .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .newsletter-form input {
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+footer .newsletter-form .btn-subscribe {
+  width: 10rem;
+  align-self: flex-end;
+  padding: 0.75rem 0;
+  border-radius: 5px;
+  border: 2px solid var(--pink);
+  background-color: var(--pink);
+  font-size: 1rem;
+  color: var(--paleBlue);
+  transition: background-color 0.4s ease;
+}
+
+footer .newsletter-form .btn-subscribe:hover {
+  background-color: var(--paleBlue);
+  color: var(--pink);
+}
+
+/* ==================
+    Footer Contacts
+==================== */
+
+footer .contacts-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer .contacts-header i {
+  margin-right: 1rem;
+}
+
+footer .contacts-header h3 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+footer .contacts-text {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+footer .contacts-info {
+  margin-bottom: 2rem;
+}
+
+footer .contacts-info .phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer .contacts-info .email {
+  display: flex;
+  align-items: center;
+}
+
+footer .contacts-info i {
+  width: 25px;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+footer .contacts-info p {
+  font-size: 0.8rem;
+}
+
+footer .social-icons i {
+  margin-right: 1rem;
+}
+
+footer .social-icons .fa-facebook-square,
+footer .social-icons .fa-twitter-square {
+  background-color: transparent;
+  color: #fff;
+}
+
+footer .social-icons .fa-instagram {
+  color: #fff;
+}
