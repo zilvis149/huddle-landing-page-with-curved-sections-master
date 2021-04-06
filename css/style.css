@@ -183,7 +183,7 @@ a {
 .quality-1,
 .quality-2,
 .quality-3 {
-  height: 50rem;
+  height: 40rem;
 }
 
 .quality-1 .container,
@@ -215,6 +215,56 @@ a {
 .quality-1,
 .quality-3 {
   background-color: var(--paleBlue);
+  position: relative;
+}
+
+.quality-1 .wave-mobile-top,
+.quality-3 .wave-mobile-top {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.quality-1 .wave-mobile-bottom,
+.quality-3 .wave-mobile-bottom {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+}
+
+.quality-1 .wave-desktop-top,
+.quality-3 .wave-desktop-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.quality-1 .wave-desktop-bottom,
+.quality-3 .wave-desktop-bottom {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+}
+
+.quality-2 {
+  height: 40rem;
+  margin-bottom: 8rem;
+}
+
+.quality-3 .container {
+  justify-content: flex-start;
 }
 
 /* ====================
@@ -223,7 +273,8 @@ a {
 
 .get-started-lower {
   height: 40rem;
-  padding: 6rem 0;
+  display: flex;
+  align-self: center;
   text-align: center;
 }
 
@@ -247,6 +298,36 @@ footer .footer-container {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ===============
+    Footer Wave
+================= */
+
+footer {
+  position: relative;
+}
+
+footer .container {
+  padding-top: 2rem;
+}
+
+footer .wave-mobile-top {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+footer .wave-desktop-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
 }
 
 /* ===================
@@ -365,4 +446,207 @@ footer .social-icons .fa-twitter-square {
 
 footer .social-icons .fa-instagram {
   color: #fff;
+}
+
+/* =================
+    Media Queries
+=================== */
+
+@media screen and (min-width: 760px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .stats {
+    height: 40rem;
+  }
+
+  .stats .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .quality-1 .wave-mobile-top,
+  .quality-3 .wave-mobile-top {
+    display: none;
+  }
+
+  .quality-1 .wave-mobile-bottom,
+  .quality-3 .wave-mobile-bottom {
+    display: none;
+  }
+
+  .quality-1 .wave-desktop-top,
+  .quality-3 .wave-desktop-top {
+    display: block;
+  }
+
+  .quality-1 .wave-desktop-bottom,
+  .quality-3 .wave-desktop-bottom {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Header */
+
+  .header {
+    margin-bottom: 4rem;
+  }
+
+  .header .logo img {
+    width: 10rem;
+  }
+
+  .header .get-started-upper h1 {
+    font-size: 2.4rem;
+  }
+
+  .header .get-started-upper p {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+
+  /* Buttons */
+
+  .btn-small {
+    font-size: 1rem;
+  }
+
+  .btn-big {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+  }
+
+  /* Stats Section */
+
+  .stats img {
+    width: 3rem;
+  }
+
+  .stats .number {
+    font-size: 4.4rem;
+  }
+
+  .stats .name {
+    font-size: 1.4rem;
+  }
+
+  /* Qualities Sections */
+
+  .quality-1,
+  .quality-2,
+  .quality-3 {
+    height: 30rem;
+  }
+
+  .quality-2 {
+    height: 50rem;
+    margin-bottom: 2rem;
+  }
+
+  .quality-1 .container,
+  .quality-2 .container,
+  .quality-3 .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .quality-1 .info-container,
+  .quality-2 .info-container,
+  .quality-3 .info-container {
+    text-align: start;
+    width: 40%;
+  }
+
+  .quality-1 .quality-image,
+  .quality-2 .quality-image,
+  .quality-3 .quality-image {
+    transform: scale(1.25);
+  }
+
+  .quality-1 .info-container .quality-name,
+  .quality-2 .info-container .quality-name,
+  .quality-3 .info-container .quality-name {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .quality-1 .info-container .quality-info,
+  .quality-2 .info-container .quality-info,
+  .quality-3 .info-container .quality-info {
+    font-size: 1.2rem;
+  }
+
+  .quality-1 .container .quality-image,
+  .quality-3 .container .quality-image {
+    order: 1;
+  }
+
+  .quality-3 .container .quality-image {
+    margin-top: 4rem;
+  }
+
+  .quality-2 .container .info-container {
+    transform: translateX(80px);
+  }
+
+  /* Lower Page Section */
+
+  .get-started-lower {
+    height: 50rem;
+  }
+
+  .get-started-lower h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Footer */
+
+  footer {
+    padding-bottom: 4rem;
+  }
+
+  footer .footer-container .contacts {
+    width: 30%;
+  }
+
+  footer .footer-container .contacts .contacts-text {
+    width: 80%;
+  }
+
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer .footer-container .newsletter {
+    order: 1;
+    width: 40%;
+    margin-bottom: 8rem;
+  }
+
+  footer .footer-container .newsletter .newsletter-info {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  footer .footer-container .newsletter-form {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  footer .footer-container .newsletter-form input {
+    margin-right: 2rem;
+  }
+
+  footer .footer-container .newsletter-form .btn-subscribe {
+    align-self: flex-start;
+  }
 }
