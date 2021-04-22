@@ -27,13 +27,15 @@
         </div>
       </header>
       <!-- Big image displaying screen mockups -->
-      <section class="screen-mockups">
+      <section class="screen-mockups" aria-hidden="true">
+        <h2 class="offscreen">Screen mockups image</h2>
         <div class="container">
           <img src="./images/screen-mockups.svg" alt="screen-mockups" class="stats-icon">
         </div>
       </section>
       <!-- Stats section -->
       <section class="stats">
+        <h2 class="offscreen">Major statistics</h2>
         <div class="container">
           <div class="communities">
             <img src="./images/icon-communities.svg" alt="communities">
@@ -128,10 +130,11 @@
         <div class="newsletter">
           <h4 class="newsletter-heading">newsletter</h4>
           <p class="newsletter-info">To receive tip on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address</p>
-          <from class="newsletter-form">
-            <input type="text" class="newsletter-input">
+          <form class="newsletter-form">
+            <label for="newsletter-input" class="offscreen">hey</label>
+            <input type="text" id="newsletter-input" class="newsletter-input">
             <button type="submit" class="btn btn-subscribe">subscribe</button>
-          </from>
+          </form>
         </div>
         <!-- Useful contact info -->
         <div class="contacts">
@@ -151,9 +154,9 @@
             </div>
           </div>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
           </div>
         </div>
       </div>
